@@ -1,0 +1,24 @@
+# Credentials
+.env
+*.key
+kaggle.json
+
+# Model files
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
+
+# Generated files
+outputs/
+downloads/
+generated/
+*.zip
+
+# Runtime files
+webui.log
+cloudflared.log
+a1111-auth-*.txt
+__pycache__/
+.ipynb_checkpoints/
