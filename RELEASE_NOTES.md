@@ -1,8 +1,16 @@
-# v1.0.0 – Kaggle Classroom Edition
+# v1.0.1 – Kaggle Classroom Edition
+
+License: MIT
+
+## Model list update
+
+- Show 25 matching models per page with a count and previous/next controls.
+- Keep model selections when changing pages; reset to page one when a search or filter changes.
+- Clarify the Google Drive shared-folder URL steps. The folder must allow anyone with the link to view it.
 
 ## 한국어
 
-Google Colab 기반 AUTOMATIC1111 실행 구조를 Kaggle Notebook GPU 환경으로 포팅한 첫 공개 버전입니다.
+Google Colab 기반 AUTOMATIC1111 실행 구조를 Kaggle Notebook GPU 환경으로 포팅한 교육용 공개 버전입니다.
 
 ### 주요 기능
 
@@ -10,6 +18,7 @@ Google Colab 기반 AUTOMATIC1111 실행 구조를 Kaggle Notebook GPU 환경으
 - Python 3.10 환경과 AUTOMATIC1111 자동 설치
 - Checkpoint·LoRA·ControlNet·Embedding·VAE 동시 선택
 - Google Drive `Auto1111` 폴더 자동 분류
+- 첫 화면에서 Google Drive 모델 루트 폴더 지정·변경 및 세션 내 설정 유지
 - CivitAI·Hugging Face·Google Drive 모델 등록
 - 모델 캐시 및 저장 공간 관리
 - Cloudflare Quick Tunnel 기반 WebUI 접속
@@ -25,7 +34,7 @@ Google Colab 기반 AUTOMATIC1111 실행 구조를 Kaggle Notebook GPU 환경으
 
 ## English
 
-This is the first public release of a Google Colab-based AUTOMATIC1111 workflow ported to the Kaggle Notebook GPU environment.
+This is an educational public release of a Google Colab-based AUTOMATIC1111 workflow ported to the Kaggle Notebook GPU environment.
 
 ### Main Features
 
@@ -33,6 +42,7 @@ This is the first public release of a Google Colab-based AUTOMATIC1111 workflow 
 - Automatic Python 3.10 environment and AUTOMATIC1111 installation
 - Simultaneous selection of Checkpoints, LoRAs, ControlNet models, Embeddings, and VAEs
 - Automatic classification of the Google Drive `Auto1111` folder
+- Google Drive model root folder selection on the first screen, with session persistence
 - CivitAI, Hugging Face, and Google Drive model registration
 - Model cache and storage management
 - WebUI access through a Cloudflare Quick Tunnel

@@ -12,7 +12,9 @@ It provides a button-based interface for selecting Checkpoints, LoRAs, LyCORIS m
 - Automatic Python 3.10 virtual environment setup
 - Automatic AUTOMATIC1111 installation
 - Simultaneous selection of Checkpoints, LoRAs, ControlNet models, Embeddings, and VAEs
+- Model name search, 25-item pages, and a matching model count
 - Automatic model classification from a Google Drive `Auto1111` folder
+- Google Drive model root selection and replacement on the first screen
 - Support for CivitAI, Hugging Face, and Google Drive links
 - Selective downloading of required models
 - Configurable cache limit, automatic cleanup, pinning, and deletion
@@ -46,18 +48,19 @@ Each student should run a separate copy using their own Kaggle account. Do not s
 3. Open **Settings** and select **Accelerator → GPU**.
 4. Set **Internet → On**.
 5. Click **Run All**.
-6. Select at least one Checkpoint.
-7. Select any required LoRA, ControlNet, Embedding, or VAE models.
-8. Click **Apply Selected Models & Launch WebUI**.
-9. Wait until the status becomes `5/5 · Ready to Connect`.
-10. Click **Open AUTOMATIC1111 WebUI**.
-11. Sign in with the username `a1111` and the temporary password shown in the panel.
+6. Enter the Google Drive model root folder URL at the top of the panel and click **Set Folder & Load Model List**. Skip this step if Drive models are not used.
+7. Select at least one Checkpoint.
+8. Search by name and use **Previous** and **Next** to select any required LoRA, ControlNet, Embedding, or VAE models. Selections remain checked across pages.
+9. Click **Apply Selected Models & Launch WebUI**.
+10. Wait until the status becomes `5/5 · Ready to Connect`.
+11. Click **Open AUTOMATIC1111 WebUI**.
+12. Sign in with the username `a1111` and the temporary password shown in the panel.
 
 GPU utilization may remain low or show 0% during installation and downloads. The GPU is mainly used when generating images in the WebUI.
 
 ## Google Drive Model Folder
 
-Recommended structure:
+The root folder can have any name and can be placed anywhere in Google Drive. Example structure:
 
 ```text
 Auto1111/
@@ -69,11 +72,15 @@ Auto1111/
 └── VAE/
 ```
 
-1. Set the `Auto1111` folder permission to **Anyone with the link → Viewer**.
-2. Paste the folder-sharing URL into the **Drive Folder** tab.
-3. Click **Load Model List**.
+1. Set the model root folder permission to **Anyone with the link → Viewer**.
+2. Paste the folder-sharing URL into **Drive Model Folder** at the top of the panel.
+3. Click **Set Folder & Load Model List**.
+
+To switch to another root folder, replace the URL on the first screen and click the same button again. The selected URL is retained when the panel is rerun within the same Kaggle session. The **Drive Folder** tab can also load a specific model subfolder separately.
 
 Loading the list reads only filenames and model categories. It does not download every file. Only models selected with **Use** or **Download** are copied to the Kaggle working space.
+
+The model list shows 25 items per page. Changing the search term or a category/display filter returns to the first page.
 
 The notebook does not modify or delete original Google Drive files.
 
@@ -172,9 +179,11 @@ Clear Notebook outputs before committing to a public repository.
 
 Changes to Kaggle runtime images, CUDA drivers, network policies, and upstream projects may require updates to this notebook.
 
-## Terms of Use
+## License and Terms of Use
 
-This notebook is intended for education and research. AUTOMATIC1111, extensions, and model files remain subject to their respective licenses and terms. Do not include model files unless redistribution is explicitly permitted.
+The original Notebook code and documentation in this repository are released under the [MIT License](LICENSE). They may be used, copied, modified, published, distributed, sublicensed, or sold for educational, research, personal, or commercial purposes. The original copyright and MIT License notices must be retained in redistributed copies.
+
+AUTOMATIC1111, extensions, and model files remain subject to their respective licenses and terms. The MIT License of this repository does not replace or modify the licenses of external projects or model files. Do not include model files unless redistribution is explicitly permitted.
 
 Users are responsible for checking copyright, portrait rights, privacy, misinformation, bias, and harmful-content issues in generated images.
 
