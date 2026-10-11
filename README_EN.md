@@ -171,6 +171,7 @@ Clear Notebook outputs before committing to a public repository.
 
 ## Version Information
 
+- Notebook release: `v1.0.2`
 - AUTOMATIC1111: `v1.10.1`
 - Python virtual environment: `3.10`
 - PyTorch: `2.1.2`

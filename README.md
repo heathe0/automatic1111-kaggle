@@ -169,6 +169,7 @@ Cloudflare 계정은 필요하지 않습니다. 임시 접속 주소와 비밀�
 
 ## 버전 정보
 
+- Notebook 배포판: `v1.0.2`
 - AUTOMATIC1111: `v1.10.1`
 - Python 가상환경: `3.10`
 - PyTorch: `2.1.2`

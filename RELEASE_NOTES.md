@@ -1,14 +1,20 @@
-# v1.0.1 – Kaggle Classroom Edition
+# Release Notes
+
+## v1.0.2 – Model List Usability Update
+
+Released: 2026-10-11
 
 License: MIT
 
-## Model list update
+### Changes
 
 - Show 25 matching models per page with a count and previous/next controls.
 - Keep model selections when changing pages; reset to page one when a search or filter changes.
 - Clarify the Google Drive shared-folder URL steps. The folder must allow anyone with the link to view it.
 
-## 한국어
+## v1.0.1 – Kaggle Classroom Edition
+
+### 한국어
 
 Google Colab 기반 AUTOMATIC1111 실행 구조를 Kaggle Notebook GPU 환경으로 포팅한 교육용 공개 버전입니다.
 
@@ -32,7 +38,7 @@ Google Colab 기반 AUTOMATIC1111 실행 구조를 Kaggle Notebook GPU 환경으
 - Checkpoint를 하나 이상 선택하십시오.
 - 학생마다 자신의 Kaggle 계정과 Notebook 사본을 사용하십시오.
 
-## English
+### English
 
 This is an educational public release of a Google Colab-based AUTOMATIC1111 workflow ported to the Kaggle Notebook GPU environment.
 
@@ -56,6 +62,6 @@ This is an educational public release of a Google Colab-based AUTOMATIC1111 work
 - Select at least one Checkpoint.
 - Use a separate Kaggle account and Notebook copy for each student.
 
-## Known Limitations
+### Known Limitations
 
 Kaggle runtime environments and upstream software can change without notice. Updates to Kaggle, AUTOMATIC1111, PyTorch, Cloudflare, or third-party extensions may affect installation or execution. Cloudflare Quick Tunnel URLs are temporary and change between launches.
